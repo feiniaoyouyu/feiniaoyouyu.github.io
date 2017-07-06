@@ -1,0 +1,127 @@
+.loginbar {
+  height: 28px;
+  line-height: 28px;
+  background-color: #f5f5f5;
+}
+.loginbar .loginbar-container {
+  padding: 0 18px;
+}
+.loginbar .loginbar-container i {
+  border-width: 5px;
+  border-style: solid;
+  border-color: #999 transparent transparent transparent;
+  margin-top: 12px;
+  display: inline-block;
+  margin-left: 5px;
+  vertical-align: top;
+}
+.loginbar .left {
+  position: relative;
+}
+.loginbar .left .guangdong {
+  padding: 0 10px;
+  border: 1px solid transparent;
+  position: relative;
+}
+.loginbar .left .guangdong::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  border-bottom: 1px solid white;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+}
+.loginbar .left .guangdong:hover {
+  background-color: white;
+  border-left: 1px solid #cdcdcd;
+  border-right: 1px solid #cdcdcd;
+}
+.loginbar .left .left-hover {
+  position: absolute;
+  background-color: white;
+  top: 28px;
+  left: 0;
+  display: none;
+  padding: 20px;
+  width: 256px;
+  border: 1px solid #cdcdcd;
+  z-index: 1;
+}
+.loginbar .left .left-hover h3 {
+  text-indent: 4px;
+  border-bottom: 1px dashed #000;
+  color: black;
+}
+.loginbar .left .left-hover ul {
+  margin-top: 15px;
+}
+.loginbar .left .left-hover ul li {
+  margin-top: 5px;
+}
+.loginbar .left .left-hover ul li span {
+  color: black;
+}
+.loginbar .left .left-hover ul li a {
+  margin-left: 18px;
+}
+.loginbar .right {
+  float: right;
+}
+.loginbar .right li {
+  float: left;
+}
+.loginbar .right li:nth-child(7) {
+  position: relative;
+}
+.loginbar .right li:nth-child(7)::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 14px;
+  background: url("../images/header.png") no-repeat -100px -150px;
+  margin-right: 8px;
+  margin-top: 6px;
+  vertical-align: top;
+}
+.loginbar .right li span {
+  margin-left: 12px;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-top: 10px;
+  background: url("../images/header.png") no-repeat -138px -4px;
+  vertical-align: top;
+}
+
+.logo {
+  height: 100px;
+}
+.logo .left {
+  position: relative;
+  height: 100px;
+}
+.logo .left img {
+  position: absolute;
+  left: 0;
+}
+
+.main-nav {
+  width: 100%;
+  height: 40px;
+  background-color: #f10180;
+}
+
+.main-nav.fix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 1s;
+          transition: all 1s;
+}
+
+.banner {
+  height: 400px;
+  background-color: pink;
+}
