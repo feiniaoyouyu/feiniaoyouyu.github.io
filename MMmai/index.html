@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--<script>
+        window.onresize = function() {
+            var fontSize = window.screen.availWidth / 20;
+            document.querySelector('html').style.fontSize = fontSize + "px";
+        }
+    </script>-->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="lib/swiper/swiper.min.scss">
+</head>
+
+<body>
+    <div class="Mai-layout">
+        <div class="top">
+            <div class="header">
+                <h3>慢慢买</h3>
+                <span>全网比价.折扣<br>manmanmai.com</span>
+                <a href="#"></a>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="请输入你想比价的商品">
+                <input type="button" value="搜索">
+            </div>
+        </div>
+        <div class="main-swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <ul id="caidanUl">
+                        <!--<li>
+                            <a href="#">
+                                <img src="images/ic_cu.png" alt="">
+                                <p>比价搜索</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/ic_cu.png" alt="">
+                                <p>比价搜索</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/ic_cu.png" alt="">
+                                <p>比价搜索</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/ic_cu.png" alt="">
+                                <p>比价搜索</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/ic_cu.png" alt="">
+                                <p>比价搜索</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/ic_cu.png" alt="">
+                                <p>比价搜索</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/ic_cu.png" alt="">
+                                <p>比价搜索</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" id="moreLi">
+                                <img src="images/gengduo.png" alt="">
+                                <p>更多</p>
+                            </a>
+                        </li>-->
+                    </ul>
+                    <!--<ul class="ul-more">-->
+                        <!--<li>
+                            <a href="#">
+                                <img src="images/ic_cu.png" alt="">
+                                <p>比价搜索</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/ic_cu.png" alt="">
+                                <p>比价搜索</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/ic_cu.png" alt="">
+                                <p>比价搜索</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/ic_cu.png" alt="">
+                                <p>比价搜索</p>
+                            </a>
+                        </li>-->
+                    <!--</ul>-->
+
+                    <!--超值折扣推荐++++++++++++++++++-->
+                    <div class="zheKou">
+                        <h3>超值折扣推荐</h3>
+                        <a href="#"><span>&nbsp;&gt</span></a>
+                    </div>
+                    <div class="zk-container-main">
+                        <!--<div class="zk-container">
+                            <a href="#">
+                                <div class="left fl"><img src="images/22.PNG" alt=""></div>
+                                <div class="right fl">
+                                    <p>移动端凑单品：海天 鲜味 生抽1.28L<span>10.9</span></p>
+                                    <p>京东商城|10.25 14:10<span>1</span></p>
+                                </div>
+                            </a>
+                        </div>-->
+                    </div>
+
+
+
+                    <!--底部+++++++++++++++++++++++++++++-->
+                    <div class="moreCheap">
+                        <a href="#">更多优惠信息>></a>
+                    </div>
+                    <div class="paihang">
+                        <div class="pinpai">品牌排行<span>&gt</span></div>
+
+                    </div>
+                    <!--底部++++++++++++++++++-->
+                    <div class="foot">
+                        <div class="top">
+                            <ul>
+                                <li><a href="#">登录</a></li>
+                                <li><a href="#">注册</a></li>
+                                <li>
+                                    <a href="#"><img src="images/top.jpg" alt="">返回顶部</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bot">
+                            <h4><span>手机APP下载</span>慢慢买手机版<em>--掌上比价平台</em></h4>
+                            <p>m.manmanbuy.com</p>
+                        </div>
+                    </div>
+                </div>
+                <!--<input id="btn" type="button" value="加载更多">-->
+
+            </div>
+            <div id="mainScrollbar" class="swiper-scrollbar"></div>
+
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="lib/zepto/zepto.js"></script>
+<script src="lib/zepto/event.js"></script>
+<script src="lib/zepto/ajax.js"></script>
+<script src="lib/zepto/fx.js"></script>
+<script src="lib/zepto/touch.js"></script>
+<script src="lib/zepto/fx_methods.js"></script>
+<script src="lib/swiper/swiper.min.js"></script>
+<script src="lib/arttemplate/template.js"></script>
+<script src="js/index.js"></script>
+
+<!--菜单栏模板+++++++++++++++++++++++++++++++++++-->
+<script type="text/template" id="caiDan-template">
+{{each result}}
+    <li>
+        <a href="{{$value.titlehref}}">
+            {{#$value.img}}
+            <p>{{$value.name}}</p>
+        </a>
+    </li>
+{{/each}}
+    
+</script>
+
+<!--折扣页模板+++++++++++++++++++++-->
+<script type="text/html" id="template-zk">
+    {{each result}}
+    <div class="zk-container">
+        <a href="#">
+            <div class="left fl">{{#$value.productImg2}}</div>
+            <div class="right fl">
+                <p>{{$value.productName}}<span>{{$value.productPinkage}}</span></p>
+                <p>{{$value.productFrom}}|{{$value.productTime}}<span>{{$value.productComCount}}</span></p>
+            </div>
+        </a>
+    </div>
+    {{/each}}
+</script>

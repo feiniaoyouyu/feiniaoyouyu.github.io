@@ -1,0 +1,462 @@
+@charset "UTF-8";
+
+.seckill-top {
+  height: 55px;
+  line-height: 55px;
+  overflow: hidden;
+  background: url("../img/seckill_hd.png");
+}
+
+.seck-left {
+  float: left;
+  padding-left: 30px;
+  position: relative;
+}
+
+.seckill .seck-left span {
+  display: inline-block;
+  float: left;
+  width: 34px;
+  height: 40px;
+  margin-top: 8px;
+  margin-right: 8px;
+  background: url("../img/sprite_index@1x.png") 0 -40px; /*秒表*/
+}
+
+.seckill .seck-left h2 {
+  float: left;
+  font-size: 25px;
+  margin-right: 8px;
+  color: #ffffff;
+  font-family: "微软雅黑";
+  font-weight: 200;
+}
+
+.seck-left a {
+  float: left;
+  color: #fff;
+  margin-top: 4px;
+}
+
+.seck-left a i {
+  display: inline-block;
+  width: 15px;
+  height: 16px;
+  background: url("../img/sprite_index@1x.png") -154px -40px; /*右键头*/
+  margin-top: 19px;
+  float: right;
+  margin-left: 3px;
+}
+
+.seck-left s {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background: url("../img/sprite_index@1x.png") -190px -48px; /*左侧顶部三角*/
+  position: absolute;
+  left: -4px;
+  top: -4px;
+}
+
+.seck-right {
+  float: right;
+  margin-right: 20px;
+}
+
+.seck-right li {
+  float: left;
+  color: #ffffff;
+  font-size: 13px;
+  font-family: "微软雅黑";
+}
+
+.seck-right .text-li {
+  margin-top: 7px;
+}
+
+.seck-right .time {
+  width: 35px;
+  height: 37px;
+  line-height: 37px;
+  float: left;
+  background-color: #440106;
+  border-radius: 4px;
+  text-align: center;
+  color: #d61310;
+  font-size: 22px;
+  font-weight: 900;
+  font-family: "Arial";
+  margin: 9px 3px 0 3px;
+}
+
+.seck-right .maohao {
+  float: left;
+  margin-top: 16px;
+}
+
+.seck-right .maohao i {
+  display: block;
+  width: 4px;
+  height: 4px;
+  background-color: #000000;
+  border-radius: 2px;
+  margin-top: 5px;
+}
+
+/*秒杀底部*/
+.seckill-bot {
+  height: 225px;
+  padding: 12px 0 13px 0;
+  background-color: #fff;
+}
+
+.seckill-bot ul li {
+  position: relative;
+  width: 170px;
+  height: 225px;
+  padding: 0 14px 0 15px;
+  border-right: 1px solid #e4e5e6;
+  text-align: center;
+  float: left;
+}
+
+.seckill-bot li img {
+  margin: 17px 0;
+}
+
+.seckill-bot li p {
+  width: 170px;
+  height: 32px;
+  color: #999;
+  text-align: left;
+  word-break: break-all;
+  font-family: "微软雅黑";
+}
+
+.seckill-bot li span {
+  display: inline-block;
+  margin-top: 5px;
+  font-size: 20px;
+  font-family: "arial";
+  font-weight: 700;
+  color: #f10214;
+}
+
+/*li内部的灰色小条样式*/
+.seckill-bot li i {
+  display: inline-block;
+  width: 170px;
+  height: 20px;
+  background: url("../img/sprite_index@1x.png");
+  position: absolute;
+  top: 130px;
+  left: 10px;
+}
+
+.seckill-bot .lastli {
+  border-right: 0 none;
+}
+
+/*右侧活动图片*/
+.seckill-bot .huodong {
+  display: inline-block;
+  float: right;
+  width: 180px;
+  height: 225px;
+  margin-right: 10px;
+  background: url("../img/sk6.jpg");
+}
+
+/*背景大图链接*/
+
+.bg-link {
+  position: relative;
+}
+
+.bg-link a {
+  width: 100%;
+  display: inline-block;
+  height: 480px;
+  /*background: url("../img/bg-link.png") 50% no-repeat;*/
+  background: url("../img/bg-link.png") center no-repeat;
+  /*不是为了设置坐标，而是为主体区域留出显示位置*/
+  position: absolute;
+}
+
+/*主体内容区域*/
+.main {
+  height: 480px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+
+.main-left {
+  width: 190px;
+  height: 464px;
+  background-color: #6e6568;
+  padding-top: 16px;
+  float: left;
+  
+}
+
+.main-left li {
+  height: 30px;
+  line-height: 30px;
+  font-family: "微软雅黑";
+  font-size: 14px;
+  color: #fff;
+  padding-left: 8px;
+}
+
+.main-left li:hover {
+  background-color: #999395;
+}
+
+.main-left a {
+  color: #ffffff;
+  padding: 0 3px;
+}
+
+.main-mid {
+  width: 790px;
+  height: 480px;
+  margin-left: 10px;
+  /*background-color: pink;*/
+  float: left;
+}
+
+.main-top {
+  width: 790px;
+  height: 340px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.main-top ul {
+  width: 6320px;
+}
+
+.main-top ul li {
+  float: left;
+}
+
+/*左右箭头部分*/
+.main-top .arrow {
+  width: 790px;
+  height: 60px;
+  /*background-color: pink;*/
+  position: absolute;
+  top: 140px;
+}
+
+.main-top .arrow div {
+  width: 30px;
+  height: 60px;
+  line-height: 60px;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  float: left;
+}
+
+.main-top .arrow div:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.main-top div.arr-right {
+  float: right;
+}
+
+/*底部的小圆点*/
+.main-top ol {
+  position: absolute;
+  width: 200px;
+  height: 25px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 13px;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -100px;
+}
+
+.main-top ol li {
+  float: left;
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  background-color: #fff;
+  margin-left: 11px;
+  margin-top: 6px;
+}
+
+/*底部图片区域*/
+.main-bot {
+  width: 790px;
+  height: 130px;
+}
+
+.main-bot a {
+  display: inline-block;
+  width: 390px;
+  height: 130px;
+  background: url("../img/botpic1.png");
+  float: left;
+}
+
+.main-bot a.bot-pic2 {
+  margin-left: 10px;
+  background: url("../img/botpic1.png");
+}
+
+/*主体右侧设置*/
+.main-right {
+  width: 190px;
+  height: 480px;
+  background-color: #ffffff;
+  float: right;
+}
+
+.main-right .mr-top {
+  height: 100px;
+  border-bottom: 1px solid #E6E6E6;
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
+.mr-top .admin {
+  margin-bottom: 15px;
+}
+
+.mr-top .admin .touxiang {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.mr-top .admin .touxiang img {
+  width: 45px;
+  height: 45px;
+}
+
+.mr-top .admin .welc {
+  float: left;
+  margin-left: 15px;
+}
+
+.mr-top .admin .welc p {
+  height: 20px;
+  line-height: 20px;
+  
+}
+
+.mr-top .admin .welc a {
+  color: #000;
+}
+
+.mr-top .fuli a {
+  display: inline-block;
+  width: 70px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  border: 2px solid #e01222;
+  color: #e01222;
+  float: left;
+}
+
+.mr-top .fuli .plus {
+  margin-left: 10px;
+}
+
+/*右侧中间部分*/
+.mr-mid {
+  height: 154px;
+  border-bottom: 1px solid #E6E6E6;
+  padding-left: 13px;
+}
+
+.mr-mid .cuxiao {
+  height: 26px;
+  margin-right: 15px;
+  border-bottom: 1px solid #E6E6E6;
+}
+
+.mr-mid .cuxiao li {
+  height: 26px;
+  line-height: 26px;
+  float: left;
+  margin-right: 10px;
+  color: #333;
+}
+
+.mr-mid li.line {
+  width: 1px;
+  height: 17px;
+  background-color: #E6E6E6;
+  margin-top: 5px;
+}
+
+.mr-mid li.more {
+  float: right;
+  margin-right: 15px;
+}
+
+.mr-mid .content {
+  padding-top: 13px;
+  margin-right: 15px;
+}
+
+.mr-mid .content li {
+  width: 165px;
+  height: 24px;
+  line-height: 24px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #666;
+}
+
+.mr-bot {
+  width: 190px;
+  height: 208px;
+  overflow: hidden;
+}
+
+.mr-bot ul {
+  width: 200px;
+}
+
+.mr-bot li {
+  width: 47px;
+  height: 24px;
+  border-right: 1px solid #E6E6E6;
+  border-bottom: 1px solid #E6E6E6;
+  float: left;
+  text-align: center;
+  padding-top: 45px;
+  position: relative;
+}
+
+.mr-bot li i {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: url("../img/sprite_fs@1x.png") 0 -87px no-repeat;
+  position: absolute;
+  left: 11px;
+  top: 13px;
+}
+
+.mr-bot li s {
+  display: inline-block;
+  width: 15px;
+  height: 18px;
+  background: url("../img/jian.png") 1px -1px no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
