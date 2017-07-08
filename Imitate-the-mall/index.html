@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        .clearfix:after {
+            content: '';
+            height: 0;
+            line-height: 0;
+            display: block;
+            visibility: hidden;
+            clear: both;
+        }
+        
+        .clearfix {
+            zoom: 1;
+        }
+        
+        .section {
+            width: 980px;
+            height: 130px;
+            border: 1px solid #666;
+            margin: 50px auto;
+            border-radius: 10px;
+        }
+        
+        .bar {
+            height: 70px;
+            background-color: red;
+            margin-top: 15px;
+            position: relative;
+        }
+        
+        .bar ul {
+            position: absolute;
+            top: -26px;
+            left: 30%;
+        }
+        
+        .bar ul li {
+            width: 80px;
+            height: 25px;
+            line-height: 25px;
+            text-align: center;
+            border: 1px solid #666;
+            border-bottom: none;
+            border-radius: 5px 5px 0 0;
+            float: left;
+            /*margin-left: 1px;*/
+            background-color: white;
+            cursor: pointer;
+        }
+        
+        .bar ul .active {
+            background-color: red;
+        }
+        
+        .ipt {
+            width: 500px;
+            height: 30px;
+            border-radius: 5px;
+            margin-left: 290px;
+            margin-top: 20px;
+            color: lightcoral;
+            padding-left: 10px;
+            outline: none;
+            border: none;
+        }
+        
+        .bottom {
+            height: 46px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .bottom ol {
+            position: absolute;
+            top: 0px;
+            left: 30%;
+        }
+        
+        .bottom ol li {
+            height: 46px;
+            line-height: 46px;
+        }
+        
+        .bottom span {
+            border-right: 4px solid transparent;
+            border-left: 4px solid transparent;
+            position: absolute;
+            left: 70%;
+            cursor: pointer;
+        }
+        
+        .bottom .up {
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid #666;
+            top: 14px;
+        }
+        
+        .bottom .down {
+            border-top: 4px solid #666;
+            border-bottom: 4px solid transparent;
+            top: 27px;
+        }
+        
+        .message {
+            width: 350px;
+            height: 420px;
+            border: 1px solid #666;
+            border-radius: 5px;
+            margin: 10px auto;
+        }
+        
+        .tagNav {
+            height: 35px;
+            border-bottom: 1px solid #666;
+        }
+        
+        .tagNav li {
+            width: 173px;
+            line-height: 35px;
+            text-align: center;
+        }
+        
+        .tagNav li.active {
+            border-bottom: 1px solid white;
+        }
+        
+        .tagNav1 {
+            float: left;
+            border-right: 1px solid #666;
+        }
+        
+        .tagNav2 {
+            float: right;
+            border-left: 1px solid #666;
+        }
+        
+        .tag-bottom {
+            height: 382px;
+            background-color: lightblue;
+            overflow: hidden;
+        }
+        
+        .tagContent {
+            display: none;
+        }
+        
+        .tagContent.active {
+            display: block;
+        }
+        
+        .tagContent li {
+            width: 318px;
+            height: 108px;
+            background: url('img/hot_list_li_bg.gif') no-repeat center;
+            margin: 10px auto 0;
+        }
+        
+        .tagContent li img {
+            margin-top: 12px;
+            margin-right: 15px;
+            float: left;
+        }
+        
+        .tagContentCenter {
+            margin-top: 12px;
+            float: left;
+            font-size: 12px;
+        }
+        
+        .tagContentCenter h4 {
+            margin-bottom: 10px;
+        }
+        
+        .tagContentCenter span {
+            display: block;
+        }
+        
+        .pic {
+            width: 298px;
+            height: 160px;
+            border: 1px solid #666;
+            margin: 20px auto;
+            padding: 10px;
+        }
+        
+        .pic ul {
+            float: left;
+        }
+        
+        .pic ul li {
+            width: 223px;
+            height: 133px;
+            display: none;
+        }
+        
+        .pic ul li.active {
+            display: block;
+        }
+        
+        .pic ol {
+            float: right;
+        }
+        
+        .pic ol li {
+            margin-bottom: 13px;
+            width: 54px;
+            height: 30px;
+            border: 3px solid transparent;
+        }
+        
+        .pic ol img {
+            width: 54px;
+            height: 30px;
+        }
+        
+        .pic ol li.active {
+            border: 3px solid red;
+        }
+        
+        .pic p {
+            margin-top: 142px;
+        }
+        
+        .square {
+            width: 504px;
+            height: 88px;
+            border: 1px solid #000;
+            margin: 10px auto;
+        }
+        
+        .square ul li {
+            float: left;
+            margin-left: 5px;
+            margin-top: 5px;
+            position: relative;
+        }
+        
+        .square ul li img {
+            width: 78px;
+            height: 78px;
+        }
+        
+        .square ul li p {
+            width: 78px;
+            height: 78px;
+            line-height: 78px;
+            text-align: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: whitesmoke;
+            background-color: rgba(0, 0, 0, .5);
+        }
+        
+        .dinner ul {
+            width: 318px;
+            height: 328px;
+            margin: 20px auto;
+            border: 1px solid #666;
+        }
+        
+        .dinner li {
+            background-color: #F8F8F8;
+            line-height: 20px;
+            margin-top: 5px;
+            padding: 5px 10px;
+            font-size: 14px;
+            position: relative;
+        }
+        .dinner .normal.hide {
+            display: none;
+        }
+        .dinner .normal strong {
+            color: red;
+            display: inline-block;
+            width: 30px;
+        }
+        
+        .dinner .normal a {
+            display: inline-block;
+            color: #666;
+            width: 180px;
+        }
+        
+        .dinner li a:hover {
+            text-decoration: underline;
+        }
+        
+        .dinner .bigMore {
+            overflow: hidden;
+            padding: 0 10px;
+            width: 280px;
+            height: 70px;
+            background-color: red;
+            color: white;
+            z-index: 2;
+            position: relative;
+        }
+        
+        .dinner .bigMore img {
+            width: 50px;
+            height: 50px;
+            margin-top: 10px;
+            margin-left: 10px;
+            float: left;
+        }
+        
+        .dinner .bigMore a {
+            float: left;
+            margin-top: 15px;
+            margin-left: 15px;
+            color: white;
+        }
+        
+        .dinner .bigMore p {
+            margin-top: 38px;
+            margin-left: 77px;
+        }
+        
+        .dinner .bigMore span {
+            font-size: 30px;
+            font-weight: 900;
+            position: absolute;
+            bottom: 0;
+            right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="section">
+        <div class="bar">
+            <ul class="clearfix">
+                <li class="active">搜店1</li>
+                <li>搜店2</li>
+                <li>搜店3</li>
+                <li>搜店4</li>
+                <li>搜店5</li>
+            </ul>
+            <input class="ipt" type="text" value="请输入...">
+        </div>
+        <div class="bottom">
+            <ol>
+                <li>我哈哈哈</li>
+                <li>樱花日本料理2</li>
+                <li>呵呵呵呵</li>
+                <li>呜呜呜呜</li>
+                <li>咦咦咦咦咦咦</li>
+                <li>我哈哈哈</li>
+            </ol>
+            <span class="up"></span>
+            <span class="down"></span>
+        </div>
+    </div>
+    <div class="message">
+        <ul class="tagNav">
+            <li class="tagNav1 active">红店铺</li>
+            <li class="tagNav2">新开张</li>
+        </ul>
+        <div class="tag-bottom">
+            <ul class="tagContent active">
+                <li>
+                    <img src="img/content/hot_list_pic1.gif" alt="">
+                    <div class="tagContentCenter">
+                        <h4>御舟和涵珍园国际酒店</h4>
+                        <p>区域省：朝阳/CBD</p>
+                        <span>人均：180元</span>
+                        <em>人气：12321</em>
+                    </div>
+                </li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul class="tagContent">
+                <li>
+                </li>
+                <li>
+                    <img src="img/content/hot_list_pic1.gif" alt="">
+                    <div class="tagContentCenter">
+                        <h4>御舟和涵珍园国际酒店</h4>
+                        <p>区域省：朝阳/CBD</p>
+                        <span>人均：180元</span>
+                        <em>人气：12321</em>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/content/hot_list_pic1.gif" alt="">
+                    <div class="tagContentCenter">
+                        <h4>御舟和涵珍园国际酒店</h4>
+                        <p>区域省：朝阳/CBD</p>
+                        <span>人均：180元</span>
+                        <em>人气：12321</em>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pic clearfix">
+        <ul>
+            <li class="active">
+                <a href="javascript:;"><img src="img/content/img1.gif" alt=""></a>
+            </li>
+            <li>
+                <a href="javascript:;"><img src="img/content/img2.gif" alt=""></a>
+            </li>
+            <li>
+                <a href="javascript:;"><img src="img/content/img3.gif" alt=""></a>
+            </li>
+        </ul>
+        <ol>
+            <li class="active"><img src="img/content/img1.gif" alt=""></li>
+            <li><img src="img/content/img2.gif" alt=""></li>
+            <li><img src="img/content/img3.gif" alt=""></li>
+        </ol>
+        <p>爸爸去哪儿啦~</p>
+    </div>
+    <div class="square">
+        <ul class="clearfix">
+            <li>
+                <img src="img/content/hot4.gif" alt="">
+                <!--<p>人气值</p>-->
+            </li>
+            <li><img src="img/content/hot5.gif" alt=""></li>
+            <li><img src="img/content/hot6.gif" alt=""></li>
+            <li><img src="img/content/hot7.gif" alt=""></li>
+            <li><img src="img/content/hot8.gif" alt=""></li>
+            <li><img src="img/content/hot9.gif" alt=""></li>
+        </ul>
+    </div>
+    <div class="dinner">
+        <ul>
+            <li>
+                <div class="normal hide">
+                    <strong>01</strong>
+                    <a href="javascript:;">你没见过的古怪餐厅</a>
+                    <span>世说新语</span>
+                </div>
+                <div class="bigMore">
+                    <img src="img/content/bbs_img1.gif" alt="">
+                    <a href="javascript:;">你没见过的古怪餐厅</a>
+                    <p>阿瑞斯</p>
+                    <span>ONE</span>
+                </div>
+            </li>
+            <li>
+                <div class="normal">
+                    <strong>02</strong>
+                    <a href="javascript:;">你没见过的古怪餐厅</a>
+                    <span>世说新语</span>
+                </div>
+            </li>
+              <li>
+                <div class="normal">
+                    <strong>03</strong>
+                    <a href="javascript:;">你没见过的古怪餐厅</a>
+                    <span>世说新语</span>
+                </div>
+            </li>
+              <li>
+                <div class="normal">
+                    <strong>04</strong>
+                    <a href="javascript:;">你没见过的古怪餐厅</a>
+                    <span>世说新语</span>
+                </div>
+            </li>
+              <li>
+                <div class="normal">
+                    <strong>05</strong>
+                    <a href="javascript:;">你没见过的古怪餐厅</a>
+                    <span>世说新语</span>
+                </div>
+            </li>
+              <li>
+                <div class="normal">
+                    <strong>06</strong>
+                    <a href="javascript:;">你没见过的古怪餐厅</a>
+                    <span>世说新语</span>
+                </div>
+            </li>
+              <li>
+                <div class="normal">
+                    <strong>07</strong>
+                    <a href="javascript:;">你没见过的古怪餐厅</a>
+                    <span>世说新语</span>
+                </div>
+            </li>
+          
+        </ul>
+    </div>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
