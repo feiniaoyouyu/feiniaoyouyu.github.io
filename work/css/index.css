@@ -1,0 +1,325 @@
+@charset "UTF-8";
+html,
+body {
+  width: 100%;
+  height: 100%; }
+
+.wrap {
+  overflow: hidden;
+  max-width: 750px;
+  min-width: 320px;
+  margin: 0 auto; }
+
+.header {
+  height: 3.33333rem;
+  background-color: #f3f3f3;
+  padding: 0 2.16667rem 0 5.25rem;
+  position: relative; }
+  .header a {
+    position: absolute;
+    left: 1.08333rem;
+    top: 1rem;
+    color: #707070; }
+    .header a span {
+      display: inline-block;
+      width: 0.29167rem;
+      height: 0.16667rem;
+      background: url("../images/index_06.png") no-repeat center;
+      margin-left: 0.45833rem;
+      vertical-align: middle; }
+  .header input {
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 1.25rem;
+    margin-top: 0.375rem;
+    border: 1px solid #e8e8e8;
+    padding-left: 31.17%;
+    box-sizing: border-box;
+    color: #cfcfcf;
+    font-size: 1rem; }
+    .header input::placeholder {
+      color: #cfcfcf; }
+  .header i {
+    position: absolute;
+    right: 2.91667rem;
+    top: 1rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    background: url("../images/index_03.png") no-repeat center/1.25rem 1.25rem; }
+
+.top-swiper-container {
+  width: 100%;
+  position: relative; }
+  .top-swiper-container a {
+    display: inline-block;
+    background-color: gray;
+    width: 100%; }
+    .top-swiper-container a img {
+      width: 100%;
+      height: auto; }
+
+#top-pagination-bar {
+  bottom: 2px; }
+
+#top-pagination-bar .swiper-pagination-bullet {
+  background-color: #fff5f5;
+  opacity: 1; }
+
+#top-pagination-bar .swiper-pagination-bullet-active {
+  background-color: #fe3432; }
+
+.message {
+  height: 2.66667rem;
+  line-height: 2.66667rem;
+  padding-left: 0.83333rem;
+  background-color: #f3f3f3;
+  box-sizing: border-box; }
+  .message i {
+    float: left;
+    margin-top: 0.75rem;
+    margin-right: 0.33333rem;
+    width: 1.16667rem;
+    height: 1.16667rem;
+    background: url(../images/index_13.png) no-repeat center/1.16667rem 1.16667rem; }
+  .message strong {
+    color: #fd5a59; }
+  .message span {
+    color: #989898;
+    font-size: 0.91667rem;
+    width: 23.33333rem;
+    height: 0.91667rem; }
+
+.nav {
+  padding-top: 0.91667rem; }
+  .nav li {
+    float: left;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.25rem; }
+    .nav li a {
+      display: block; }
+    .nav li img {
+      display: block;
+      margin: 0 auto;
+      width: 3.33333rem;
+      height: 3.33333rem; }
+    .nav li p {
+      text-align: center;
+      margin-top: 0.33333rem; }
+
+.bank-active {
+  background-color: #f3f3f3;
+  padding-top: 0.83333rem;
+  padding-bottom: 0.83333rem; }
+  .bank-active .bank {
+    height: 9.5rem;
+    background: url("../images/bankbg.png") no-repeat center;
+    background-size: cover; }
+    .bank-active .bank h3 {
+      color: #ff5400;
+      text-align: center;
+      padding-top: 1.25rem;
+      padding-bottom: 1rem; }
+    .bank-active .bank span {
+      display: inline-block;
+      vertical-align: middle;
+      width: 2.41667rem;
+      height: 1px;
+      background: url("../images/index200.png") no-repeat center;
+      margin-left: 0.58333rem;
+      margin-right: 0.58333rem; }
+    .bank-active .bank li {
+      float: left;
+      width: 20%;
+      display: flex;
+      justify-content: center; }
+      .bank-active .bank li img {
+        display: block;
+        margin: 0 auto;
+        width: 2.70833rem;
+        height: 2.70833rem; }
+      .bank-active .bank li p {
+        text-align: center;
+        margin-top: 0.33333rem; }
+
+section {
+  padding: 0 0.83333rem; }
+
+.top {
+  height: 2.625rem;
+  line-height: 2.625rem; }
+  .top .left i {
+    display: inline-block;
+    width: 0.95833rem;
+    height: 0.91667rem;
+    background: url("../images/index_54.png") no-repeat center/cover;
+    float: left;
+    margin-top: 0.91667rem; }
+  .top .left strong {
+    color: #fe3432;
+    margin-left: 2px;
+    float: left; }
+  .top .right em {
+    color: #6b6b6b; }
+  .top .right i {
+    display: inline-block;
+    width: 0.79167rem;
+    height: 0.79167rem;
+    background: url("../images/index_56.png") no-repeat center/cover; }
+
+.content li {
+  width: 14.33333rem;
+  height: 15.875rem;
+  border: 1px solid #ececec;
+  margin-bottom: 0.79167rem;
+  float: left;
+  position: relative; }
+  .content li:nth-child(even) {
+    float: right; }
+  .content li img {
+    width: 100%;
+    height: 9.41667rem; }
+  .content li p {
+    margin: 0.875rem 0 0 0.875rem;
+    width: 11.5rem;
+    color: #737373;
+    height: 1rem;
+    line-height: 1.33333rem; }
+.content .price {
+  width: 100%;
+  box-sizing: border-box;
+  color: #a8a8a8;
+  padding-left: 0.83333rem;
+  padding-right: 0.75rem;
+  position: absolute;
+  bottom: 0.79167rem;
+  height: 1.75rem;
+  line-height: 1.75rem; }
+  .content .price strong {
+    color: #fe3432;
+    font-size: 0.75rem; }
+  .content .price span {
+    color: #a8a8a8;
+    font-size: 0.41667rem; }
+  .content .price a {
+    color: #ff6000;
+    float: right;
+    border: 0.08333rem solid #c4c4c4;
+    border-radius: 20px;
+    padding: 0 0.41667rem;
+    height: 1.66667rem;
+    line-height: 1.66667rem; }
+
+/*神韵演出轮播图*/
+.active-swiper-container {
+  width: 100%;
+  position: relative; }
+  .active-swiper-container a {
+    display: inline-block;
+    background-color: gray;
+    width: 100%; }
+    .active-swiper-container a img {
+      width: 100%;
+      height: auto; }
+
+#active-pagination-bar {
+  bottom: 2px; }
+
+#active-pagination-bar .swiper-pagination-bullet {
+  background-color: #fff5f5;
+  opacity: 1; }
+
+#active-pagination-bar .swiper-pagination-bullet-active {
+  background-color: #fe3432; }
+
+#scenery {
+  display: inline-block;
+  width: 1.125rem;
+  height: 0.875rem;
+  background: url("../images/index_88.png") no-repeat center/cover; }
+
+/*天然温泉轮播图*/
+.spring-swiper-container {
+  width: 100%;
+  position: relative; }
+  .spring-swiper-container a {
+    display: inline-block;
+    background-color: gray;
+    width: 100%; }
+    .spring-swiper-container a img {
+      width: 100%;
+      height: auto; }
+
+#spring-pagination-bar {
+  bottom: 2px; }
+
+#spring-pagination-bar .swiper-pagination-bullet {
+  background-color: #fff5f5;
+  opacity: 1; }
+
+#spring-pagination-bar .swiper-pagination-bullet-active {
+  background-color: #fe3432; }
+
+#food {
+  display: inline-block;
+  width: 0.91667rem;
+  height: 0.875rem;
+  background: url("../images/index_120.png") no-repeat center/cover; }
+
+/*美食轮播图*/
+.food-swiper-container {
+  width: 100%;
+  position: relative; }
+  .food-swiper-container a {
+    display: inline-block;
+    background-color: gray;
+    width: 100%; }
+    .food-swiper-container a img {
+      width: 100%;
+      height: auto; }
+
+#food-pagination-bar {
+  bottom: 2px; }
+
+#food-pagination-bar .swiper-pagination-bullet {
+  background-color: #fff5f5;
+  opacity: 1; }
+
+#food-pagination-bar .swiper-pagination-bullet-active {
+  background-color: #fe3432; }
+
+#grogshop {
+  display: inline-block;
+  width: 1.08333rem;
+  height: 0.95833rem;
+  background: url("../images/index_152.png") no-repeat center/cover;
+  margin-top: 0.79167rem; }
+
+.footer {
+  width: 100%;
+  background-color: #f3f3f3;
+  padding-top: 0.83333rem; }
+
+.function {
+  border-top: 0.125rem solid #cecece; }
+  .function li {
+    float: left;
+    width: 25%;
+    height: 4.33333rem;
+    display: flex;
+    justify-content: center; }
+    .function li a {
+      width: 100%;
+      display: block;
+      padding-top: 0.625rem; }
+    .function li img {
+      display: block;
+      margin: 0 auto;
+      width: 1.70833rem;
+      height: 1.70833rem; }
+    .function li p {
+      margin-top: 0.375rem;
+      text-align: center; }
+
+/*# sourceMappingURL=index.css.map */
