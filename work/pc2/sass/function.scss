@@ -1,0 +1,4 @@
+// 传入 设计稿中的 尺寸 自动计算为 rem并返回
+@function p2r($size){
+  @return $size/20*1rem;
+}

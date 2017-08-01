@@ -1,0 +1,119 @@
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 1000px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.header img {
+  width: 100%;
+  height: auto;
+}
+
+.section {
+  background-color: #9b33f5;
+  padding: 0 2.55rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contain {
+  background-color: #db87b6;
+  padding: 1.6rem;
+  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.contain .box {
+  background-color: white;
+  padding: 1rem;
+  margin-bottom: 1.15rem;
+  height: 16.4rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+.contain .box:last-child {
+  margin-bottom: 0;
+}
+.contain .box img {
+  width: 21.55rem;
+  height: 14.55rem;
+}
+.contain .right {
+  float: right;
+  width: 17.1rem;
+  height: 14.55rem;
+  position: relative;
+}
+.contain .right h3 {
+  font-size: 1.8rem;
+  height: 4.2rem;
+  line-height: 2rem;
+  overflow: hidden;
+  color: #585858;
+}
+.contain .right p {
+  padding-top: 0.8rem;
+  height: 2.3rem;
+  font-size: 0.85rem;
+  overflow: hidden;
+}
+.contain .right strong {
+  font-size: 1.4rem;
+  color: #e12422;
+  display: block;
+  padding-bottom: 0.5rem;
+}
+.contain .right strong i {
+  font-size: 0.95rem;
+}
+.contain .right del {
+  padding-bottom: 1.6rem;
+  display: block;
+}
+.contain .right a {
+  color: white;
+  background-color: #e12422;
+  display: block;
+  width: 7.9rem;
+  height: 2.25rem;
+  line-height: 2.25rem;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 1.25rem;
+  position: absolute;
+  left: 1px;
+  bottom: 0;
+}
+
+.section .bottom {
+  height: 6.8rem;
+  margin-top: 1.5rem;
+}
+.section .bottom a {
+  display: block;
+  margin: 0 auto;
+  width: 9.9rem;
+  height: 4.05rem;
+  background-color: #d7798d;
+  border-radius: 12px;
+  padding: 0.4rem;
+  color: #e12422;
+}
+.section .bottom a i {
+  border-radius: 12px;
+  display: block;
+  background-color: #f1cfd6;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 0.85rem;
+  box-sizing: border-box;
+  font-weight: 600;
+}
